@@ -1,0 +1,22 @@
+/*  Universidad del Valle de Guatemala
+    Marco Jurado 20308
+
+    flag.css
+*/
+/* pared de meta */
+.meta {
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* imagen de bandera de la meta */
+.flag {
+    width:  100%;
+    height: 100%;
+    background-color: grey;
+    position: relative;
+}
+
+
