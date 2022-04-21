@@ -4,9 +4,9 @@
     header_bar.jsx 
     header que aparece en todo el juego
 */
-import React from 'react'
-import '../styles/bar.css'
-import carritologo from '../imagepool/sprite_car_celebration.gif'
+import React from "react";
+import "../styles/bar.css";
+import carritologo from "../imagepool/sprite_car_celebration.gif";
 
 const bar = () => {    
     return (
