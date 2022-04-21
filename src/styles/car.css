@@ -1,0 +1,41 @@
+/*  Universidad del Valle de Guatemala
+    Marco Jurado 20308
+
+    car.css
+*/
+
+/*movimientos*/
+.up {transform: rotateZ(0deg)}
+.down{transform: rotateZ(90deg)}
+.left{transform: rotateZ(-90deg)}
+.right{transform: rotateZ(180deg)}
+
+/*carro*/
+.car {
+    position: relative;
+    transition: all ease-out 500ms;
+}
+.car img{
+    width: 100%;
+    height: 100%;
+    transition: transform 250ms;
+}
+.done {
+    animation-name: done; /* llama al keyframe de done */
+    animation-duration: 500ms;
+    animation-iteration-count: infinite; /*infinita*/
+}
+
+/*keyframe*/
+@keyframes done {
+    /* keyframe de cuando gana el jugador por completar el juego */
+    from {
+        /*estado normal*/
+        transform: rotateZ(0);
+    }
+    to {
+        /* winner winner chicken dinner */
+        top: 100px;
+        transform: rotateZ(360deg);
+    }
+}
