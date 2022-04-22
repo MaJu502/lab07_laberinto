@@ -7,8 +7,8 @@
 */
 
 import React from "react";
-import player from "../imagepool/sprite_car.gif"
-import "../styles/car.css"
+import player from "../imagepool/sprite_car.gif";
+import "../styles/car.css";
 
 const car = ({status, maze, setMaze}) => {
     const [elmapa, setElmapa] = React.useState(map)
