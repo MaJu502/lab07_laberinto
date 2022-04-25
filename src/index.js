@@ -1,17 +1,17 @@
+/*  Universidad del Valle de Guatemala
+    Marco Jurado 20308
+
+    index.js
+*/
 import React from "react";
 import ReactDOM from "react-dom";
-
-const generadorLaberinto = (a,b) => {
-    const callResponse = await fetch(
-        "https://maze.juanelcaballo.club/?type=json&w=$%7Bw%7D&h=$%7Bh%7D"
-        .then((callResponse) => callResponse.json())
-        .then((info) => info);
-    return callResponse.json();
-}
+import {createRoot} from "react-dom/client";
+import MazeGame from './MazeGame.jsx'
+import './styles/master.css'
 
 const App = () => {
-    return <h1>Esto no es temple run, adelante</h1>
+    const [maze, setMaze] = React.useState({})
+    return ( <MazeGame maze={maze}/>)    
 }
-
 
 ReactDOM.render(<App/>, document.getElementById('root'))
