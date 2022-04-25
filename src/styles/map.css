@@ -39,3 +39,12 @@
     background-color: rgb(33, 121, 33); /* verde grama xd */
 }
 
+.gameover {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+
