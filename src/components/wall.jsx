@@ -31,7 +31,7 @@ const translate = (maze_comp) => {
     if (maze_comp === '+') return 'corner'
     if (maze_comp === 'p') return 'car'
     if (maze_comp === 'g') return 'flag'
-    if (maze_comp === ' ') return 'empty'
+    if (maze_comp === ' ') return 'nowall'
     if (maze_comp === '|') return 'vertical'
     if (maze_comp === '-') return 'horizontal'  
 }

@@ -7,7 +7,7 @@
 import React from "react";
 const flag = () => {
     /* bandera de llegada */
-    return( <div className={"wall meta"}> <div className="bandera"></div> </div>)
+    return( <div className={"Wall meta"}> <div className="flag"></div> </div>)
 }
 
 export default flag
