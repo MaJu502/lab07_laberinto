@@ -8,11 +8,11 @@ import React from "react";
 import "../styles/bar.css";
 import carritologo from "../imagepool/sprite_car_celebration.gif";
 
-const bar = () => {    
+const bar = (texto) => {    
     return (
         <header>
-            <img src={carritologo} alt="logo pac-man"/>
-            <h1> Esto no es temple run, juega </h1>
+            <img src={carritologo} alt=""/>
+            <h1> {texto} </h1>
         </header>
     )
 }
