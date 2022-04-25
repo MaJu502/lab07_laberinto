@@ -1,7 +1,7 @@
 /*  Universidad del Valle de Guatemala
     Marco Jurado 20308
 
-    wall.jsx
+    Wall.jsx
     recibe del api generador de laberintos y 
     traduce a react
 */
@@ -10,20 +10,20 @@ import car from "./car.jsx";
 import flag from "./flag.jsx";
 
 /* generar */
-const boundaries = ({ type, setMap, map, setWin }) => {
+const boundaries = ({ type, setMaze, maze, estado }) => {
 
     const stringType = translate(type)
 
     if (stringType == 'flag') return <flag/>
     if (stringType == 'car') return (
         <car 
-            winned={setWin}
-            setMap={setMap}
-            map={map}
+            winned={estado}
+            setMaze={setMaze}
+            maze={maze}
         />
     )
 
-    return <div className={'wall ' + stringType}></div> 
+    return <div className={'Wall ' + stringType}></div> 
 }
 
 /* traducir */
@@ -36,4 +36,4 @@ const translate = (maze_comp) => {
     if (maze_comp === '-') return 'horizontal'  
 }
 
-export default Walls
+export default Wall
